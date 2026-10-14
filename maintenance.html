@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WHS Maintenance</title>
+    <link rel="stylesheet" href="maintenance.css">
+</head>
+
+<body>
+
+<header>
+    <h1>WHS Status & Maintenance</h1>
+    <button onclick="logout()">Logout</button>
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+    <b>WHS Maintenance</b>
+
+    <span onclick="window.location.href='home.html'">
+        🏠 Home
+    </span>
+
+    <span onclick="window.location.href='whs.html'">
+        💧 WHS
+    </span>
+
+    <span onclick="window.location.href='beneficiaries.html'">
+        👥 Beneficiaries
+    </span>
+
+    <span onclick="window.location.href='activities.html'">
+        🌾 Activities
+    </span>
+
+    <span onclick="window.location.href='benefits.html'">
+        📈 Benefits
+    </span>
+
+    <span onclick="window.location.href='maintenance.html'">
+        🔧 Maintenance
+    </span>
+
+    <span onclick="window.location.href='dashboard.html'">
+        📊 Dashboard
+    </span>
+
+    <span onclick="window.location.href='reports.html'">
+        📄 Reports
+    </span>
+</nav>
+
+<main>
+
+<h2>Maintenance Record</h2>
+
+<form id="maintenanceForm">
+
+    <label>WHS</label>
+    <select id="whs" required></select>
+
+    <label>Current Condition</label>
+    <select id="condition">
+        <option>Good</option>
+        <option>Needs Maintenance</option>
+        <option>Damaged</option>
+        <option>Critical</option>
+    </select>
+
+    <label>Reported Problem</label>
+    <textarea id="problem"></textarea>
+
+    <label>Action Taken</label>
+    <textarea id="action"></textarea>
+
+    <label>Date</label>
+    <input type="date" id="date" required>
+
+    <button type="submit">Save Maintenance Record</button>
+
+</form>
+
+<h2>Maintenance Records</h2>
+
+<table>
+<thead>
+<tr>
+    <th>WHS</th>
+    <th>Condition</th>
+    <th>Problem</th>
+    <th>Action</th>
+    <th>Date</th>
+</tr>
+</thead>
+
+<tbody id="maintenanceTable"></tbody>
+</table>
+
+<button onclick="previous()">← Previous</button>
+<button onclick="next()">Next → Dashboard</button>
+
+</main>
+
+<script src="maintenance.js"></script>
+
+</body>
+</html>

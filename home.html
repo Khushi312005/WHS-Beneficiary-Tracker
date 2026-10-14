@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WHS Beneficiary Tracker - Home</title>
+
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <header class="top-bar">
+
+        <div>
+            <h1>WHS Beneficiary Tracker</h1>
+            <p>Karnataka Water Harvesting Structure Management System</p>
+        </div>
+
+        <div class="user-section">
+            <span id="userInfo"></span>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+    </header>
+
+
+    <main class="container">
+
+        <h2>Project Management Dashboard</h2>
+
+        <p class="welcome-text">
+            Select any module to manage or view project information.
+        </p>
+
+
+        <div class="module-grid">
+
+
+
+
+            <!-- MODULE 2 -->
+
+            <div class="module-card">
+
+                <div class="icon">💧</div>
+
+                <h3>Module 1</h3>
+                <h2>WHS Management</h2>
+
+                <p>
+                    Register and manage Water Harvesting Structures,
+                    locations, status and structure details.
+                </p>
+
+                <button onclick="goTo('whs.html')">
+                    Open WHS Management
+                </button>
+
+            </div>
+
+
+            <!-- MODULE 2 -->
+
+            <div class="module-card">
+
+                <div class="icon">👥</div>
+
+                <h3>Module 2</h3>
+                <h2>Beneficiary Management</h2>
+
+                <p>
+                    Register beneficiaries and associate them with
+                    Water Harvesting Structures.
+                </p>
+
+                <button onclick="goTo('beneficiaries.html')">
+                    Open Beneficiaries
+                </button>
+
+            </div>
+
+
+            <!-- MODULE 4 -->
+
+            <div class="module-card">
+
+                <div class="icon">🌾</div>
+
+                <h3>Module 3</h3>
+                <h2>Activity & Livelihood</h2>
+
+                <p>
+                    Track agriculture, irrigation, fisheries,
+                    livestock and other activities.
+                </p>
+
+                <button onclick="goTo('activities.html')">
+                    Open Activities
+                </button>
+
+            </div>
+
+
+            <!-- MODULE 5 -->
+
+            <div class="module-card">
+
+                <div class="icon">📈</div>
+
+                <h3>Module 4</h3>
+                <h2>Benefit Tracking</h2>
+
+                <p>
+                    Record and track the benefits received by
+                    beneficiaries.
+                </p>
+
+                <button onclick="goTo('benefits.html')">
+                    Open Benefits
+                </button>
+
+            </div>
+
+
+            <!-- MODULE 6 -->
+
+            <div class="module-card">
+
+                <div class="icon">🔧</div>
+
+                <h3>Module 5</h3>
+                <h2>WHS Maintenance</h2>
+
+                <p>
+                    Track WHS condition, problems, maintenance
+                    and actions taken.
+                </p>
+
+                <button onclick="goTo('maintenance.html')">
+                    Open Maintenance
+                </button>
+
+            </div>
+
+
+            <!-- MODULE 7 -->
+
+            <div class="module-card">
+
+                <div class="icon">📊</div>
+
+                <h3>Module 6</h3>
+                <h2>Dashboard & Analytics</h2>
+
+                <p>
+                    View total WHS, beneficiaries, activities
+                    and maintenance statistics.
+                </p>
+
+                <button onclick="goTo('dashboard.html')">
+                    View Dashboard
+                </button>
+
+            </div>
+
+
+            <!-- MODULE 8 -->
+
+            <div class="module-card">
+
+                <div class="icon">📄</div>
+
+                <h3>Module 7</h3>
+                <h2>Reports</h2>
+
+                <p>
+                    Generate WHS-wise, beneficiary-wise,
+                    activity-wise and maintenance reports.
+                </p>
+
+                <button onclick="goTo('reports.html')">
+                    Open Reports
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="home.js"></script>
+
+</body>
+
+</html>

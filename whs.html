@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WHS Management</title>
+    <link rel="stylesheet" href="whs.css">
+</head>
+
+<body>
+
+<header>
+    <h1>💧 WHS Beneficiary Tracker</h1>
+
+    <div>
+        <span id="user"></span>
+        <button onclick="logout()">Logout</button>
+    </div>
+</header>
+
+<nav>
+    <b>WHS Management</b>
+
+    <span onclick="window.location.href='home.html'">
+        🏠 Home
+    </span>
+
+    <span onclick="window.location.href='beneficiaries.html'">
+        → Beneficiaries
+    </span>
+
+    <span onclick="window.location.href='activities.html'">
+        → Activities
+    </span>
+
+    <span onclick="window.location.href='benefits.html'">
+        → Benefits
+    </span>
+
+    <span onclick="window.location.href='maintenance.html'">
+        → Maintenance
+    </span>
+
+    <span onclick="window.location.href='dashboard.html'">
+        → Dashboard
+    </span>
+
+    <span onclick="window.location.href='reports.html'">
+        → Reports
+    </span>
+</nav>
+
+<main>
+
+<h2>WHS Management Module</h2>
+
+<form id="whsForm">
+
+    <label>WHS ID</label>
+    <input id="whsId" placeholder="WHS001" required>
+
+    <label>District</label>
+    <input id="district" placeholder="Enter district" required>
+
+    <label>Taluk</label>
+    <input id="taluk" placeholder="Enter taluk" required>
+
+    <label>Village</label>
+    <input id="village" placeholder="Enter village" required>
+
+    <label>Structure Type</label>
+    <select id="structureType">
+        <option>Check Dam</option>
+        <option>Farm Pond</option>
+        <option>Percolation Tank</option>
+        <option>Nala Bund</option>
+        <option>Water Storage Tank</option>
+        <option>Other</option>
+    </select>
+
+    <label>Status</label>
+    <select id="status">
+        <option>Active</option>
+        <option>Under Maintenance</option>
+        <option>Damaged</option>
+        <option>Non-Functional</option>
+    </select>
+
+    <label>Construction Year</label>
+    <input type="number" id="year" min="2000" max="2026" required>
+
+    <label>Benefited Area (Acres)</label>
+    <input type="number" id="area">
+
+    <label>Maintenance / Problem</label>
+    <textarea id="problem"></textarea>
+ 
+    <button type="submit">Save WHS</button>
+
+</form>
+
+<h2>Registered WHSs</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>District</th>
+            <th>Taluk</th>
+            <th>Village</th>
+            <th>Type</th>
+            <th>Status</th>
+            <th>Year</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody id="whsTable"></tbody>
+</table>
+
+<button onclick="nextModule()">
+    Next → Beneficiary Management
+</button>
+
+</main>
+
+<script src="whs.js"></script>
+
+</body>
+</html>

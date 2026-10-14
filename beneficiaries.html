@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beneficiary Management</title>
+    <link rel="stylesheet" href="beneficiaries.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Beneficiary Management</h1>
+
+    <button onclick="logout()">
+        Logout
+    </button>
+</header>
+
+
+<!-- MAIN NAVIGATION -->
+
+<nav>
+
+    <b>Beneficiary Management</b>
+
+    <span onclick="window.location.href='home.html'">
+        🏠 Home
+    </span>
+
+    <span onclick="window.location.href='whs.html'">
+        💧 WHS
+    </span>
+
+    <span onclick="window.location.href='beneficiaries.html'">
+        👥 Beneficiaries
+    </span>
+
+    <span onclick="window.location.href='activities.html'">
+        🌾 Activities
+    </span>
+
+    <span onclick="window.location.href='benefits.html'">
+        📈 Benefits
+    </span>
+
+    <span onclick="window.location.href='maintenance.html'">
+        🔧 Maintenance
+    </span>
+
+    <span onclick="window.location.href='dashboard.html'">
+        📊 Dashboard
+    </span>
+
+    <span onclick="window.location.href='reports.html'">
+        📄 Reports
+    </span>
+
+</nav>
+
+
+<main>
+
+<main>
+
+<h2>Register Beneficiary</h2>
+
+<form id="beneficiaryForm">
+
+    <label>Beneficiary ID</label>
+    <input id="beneficiaryId" required>
+
+    <label>Name</label>
+    <input id="name" required>
+
+    <label>Village</label>
+    <input id="village" required>
+
+    <label>WHS</label>
+    <select id="whs" required></select>
+
+    <label>Activity</label>
+    <select id="activity">
+        <option>Agriculture</option>
+        <option>Irrigation</option>
+        <option>Fisheries</option>
+        <option>Livestock</option>
+        <option>Other</option>
+    </select>
+
+    <label>Contact</label>
+    <input id="contact">
+
+    <button type="submit">Save Beneficiary</button>
+
+</form>
+
+<h2>Beneficiary List</h2>
+
+<table>
+<thead>
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Village</th>
+    <th>WHS</th>
+    <th>Activity</th>
+    <th>Contact</th>
+    <th>Action</th>
+</tr>
+</thead>
+
+<tbody id="beneficiaryTable"></tbody>
+</table>
+
+<button onclick="backToWHS()">← Previous</button>
+<button onclick="nextModule()">Next → Activities</button>
+
+</main>
+
+<script src="beneficiaries.js"></script>
+
+</body>
+</html>

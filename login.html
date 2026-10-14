@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WHS Tracker - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <h1>💧 WHS Beneficiary Tracker</h1>
+    <p>Water Harvesting Structure Management System</p>
+
+    <h2>Login</h2>
+
+    <form onsubmit="login(event)">
+
+        <label>Username</label>
+        <input type="text" id="username"
+               placeholder="Enter username" required>
+
+        <label>Password</label>
+        <input type="password" id="password"
+               placeholder="Enter password" required>
+
+        <label>Role</label>
+        <select id="role">
+            <option value="Admin">Admin</option>
+            <option value="Project Officer">Project Officer</option>
+        </select>
+
+        <button type="submit">Login</button>
+
+    </form>
+
+    <p id="loginMessage"></p>
+
+    
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+</html>

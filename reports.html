@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WHS Reports</title>
+    <link rel="stylesheet" href="reports.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>WHS Reports Module</h1>
+
+    <button onclick="logout()">Logout</button>
+
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+    <b>Reports</b>
+
+    <span onclick="window.location.href='home.html'">
+        🏠 Home
+    </span>
+
+    <span onclick="window.location.href='whs.html'">
+        💧 WHS
+    </span>
+
+    <span onclick="window.location.href='beneficiaries.html'">
+        👥 Beneficiaries
+    </span>
+
+    <span onclick="window.location.href='activities.html'">
+        🌾 Activities
+    </span>
+
+    <span onclick="window.location.href='benefits.html'">
+        📈 Benefits
+    </span>
+
+    <span onclick="window.location.href='maintenance.html'">
+        🔧 Maintenance
+    </span>
+
+    <span onclick="window.location.href='dashboard.html'">
+        📊 Dashboard
+    </span>
+
+    <span onclick="window.location.href='reports.html'">
+        📄 Reports
+    </span>
+</nav>
+
+<main>
+
+<h2>Generate Reports</h2>
+
+<div class="buttons">
+
+    <button onclick="whsReport()">
+        WHS-wise Report
+    </button>
+
+    <button onclick="beneficiaryReport()">
+        Beneficiary-wise Report
+    </button>
+
+    <button onclick="activityReport()">
+        Activity-wise Report
+    </button>
+
+    <button onclick="maintenanceReport()">
+        Maintenance Report
+    </button>
+
+    <button onclick="villageReport()">
+        Village-wise Report
+    </button>
+
+</div>
+
+<div id="reportArea">
+
+    <h2>Select a report above</h2>
+
+</div>
+
+<button onclick="previous()">
+    ← Dashboard
+</button>
+
+<button onclick="window.print()">
+    Print / Save Report
+</button>
+
+</main>
+
+<script src="reports.js"></script>
+
+</body>
+</html>
